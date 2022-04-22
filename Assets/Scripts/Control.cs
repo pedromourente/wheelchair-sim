@@ -17,6 +17,8 @@ public class Control : MonoBehaviour
     public float maxMotorTorque;
     public float maxSteeringAngle;
 
+    public Transform leftWheelTR;
+    public Transform rightWheelTR;
     // finds the corresponding visual wheel
     // correctly applies the transform
     public void ApplyLocalPositionToVisuals(WheelCollider collider)
@@ -58,4 +60,5 @@ public class Control : MonoBehaviour
             ApplyLocalPositionToVisuals(axleInfo.rightWheel);
         }
     }
+    
 }
