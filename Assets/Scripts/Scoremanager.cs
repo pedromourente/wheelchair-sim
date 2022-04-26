@@ -7,6 +7,7 @@ public class Scoremanager : MonoBehaviour
 {
     public static Scoremanager instance;
     public TextMeshProUGUI text;
+    public TextMeshProUGUI AmountUI;
     public int StarValue;
     public int winAmount;
     public WinLose winlosescript;
@@ -14,6 +15,9 @@ public class Scoremanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //winAmount.winAmount = "Stars to collect: " + AmountUI;
+
+        AmountUI.text = "Star Amount: " + winAmount.ToString();
         if (instance == null)
         {
             instance = this;

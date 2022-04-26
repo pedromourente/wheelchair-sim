@@ -21,9 +21,6 @@ public class PlayerTriggers : MonoBehaviour
             Scoremanager.instance.changescore(StarValue);
             Destroy(other.gameObject);
         }
-     else if(gameObject.transform.rotation.eulerAngles.z == 180)
-        {
-            winlosescript.loselevel();
-        }
+     
     }
 }

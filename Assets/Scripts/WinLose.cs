@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WinLose : MonoBehaviour
 {
-    bool gameended = false;
+    //bool gameended = false;
     public float restartdelay = 2f;
 
     public GameObject LoseUI;

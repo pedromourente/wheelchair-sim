@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 1879025439}
   - component: {fileID: 1879025438}
   m_Layer: 5
-  m_Name: Quite
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Quite
+  m_text: 'Quit
 
 '
   m_isRightToLeft: 0
