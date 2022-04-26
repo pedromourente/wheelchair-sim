@@ -19,5 +19,6 @@ public class Carscript : MonoBehaviour
     {
         transform.Translate(Vector3.down * Time.deltaTime * Random.Range(speed1, speed2));
         transform.Rotate(Yangle, Xangle, Zangle);
+        Destroy(gameObject, 5f);
     }
 }

@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: b45120f277cb195478c88d31e606ff81
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -6735079433088232765
+    second: Wind
+  - first:
+      74: 8810798997867143775
+    second: Armature.001|rp_manuel_animated_001_dancing_eye_end_l|Take 001|BaseLayer
+  - first:
+      74: -2347664225674776680
+    second: Armature.001|rp_manuel_animated_001_dancing_eye_end_r|Take 001|BaseLayer
+  - first:
+      74: 3723443138095255428
+    second: Armature.001|rp_manuel_animated_001_dancing_eyelid_end_l|Take 001|BaseLayer
+  - first:
+      74: 7155793116138897130
+    second: Armature.001|rp_manuel_animated_001_dancing_eyelid_end_r|Take 001|BaseLayer
+  - first:
+      74: 7601664216570760184
+    second: Armature.001|rp_manuel_animated_001_dancing_foot_end_l|Take 001|BaseLayer
+  - first:
+      74: -8954344532432248838
+    second: Armature.001|rp_manuel_animated_001_dancing_foot_end_r|Take 001|BaseLayer
+  - first:
+      74: -1472570451301864274
+    second: Armature.001|rp_manuel_animated_001_dancing_head_end|Take 001|BaseLayer
+  - first:
+      74: 2901178930677939440
+    second: Armature.001|rp_manuel_animated_001_dancing_index_end_l|Take 001|BaseLayer
+  - first:
+      74: -4918099734569841449
+    second: Armature.001|rp_manuel_animated_001_dancing_index_end_r|Take 001|BaseLayer
+  - first:
+      74: 3804256974964248090
+    second: Armature.001|rp_manuel_animated_001_dancing_jaw_end|Take 001|BaseLayer
+  - first:
+      74: -6992953454099935539
+    second: Armature.001|rp_manuel_animated_001_dancing_middle_end_l|Take 001|BaseLayer
+  - first:
+      74: 7518803872046637073
+    second: Armature.001|rp_manuel_animated_001_dancing_middle_end_r|Take 001|BaseLayer
+  - first:
+      74: -5055165697057361085
+    second: Armature.001|rp_manuel_animated_001_dancing_pinky_end_l|Take 001|BaseLayer
+  - first:
+      74: 6167210610012957295
+    second: Armature.001|rp_manuel_animated_001_dancing_pinky_end_r|Take 001|BaseLayer
+  - first:
+      74: 1493554038729967631
+    second: Armature.001|rp_manuel_animated_001_dancing_ring_end_l|Take 001|BaseLayer
+  - first:
+      74: -707647080342291620
+    second: Armature.001|rp_manuel_animated_001_dancing_ring_end_r|Take 001|BaseLayer
+  - first:
+      74: 3366169357689958820
+    second: Armature.001|rp_manuel_animated_001_dancing_thumb_end_l|Take 001|BaseLayer
+  - first:
+      74: -2469610402941977785
+    second: Armature.001|rp_manuel_animated_001_dancing_thumb_end_r|Take 001|BaseLayer
+  - first:
+      74: -3507329328487476796
+    second: Armature.001|Wind
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Wind
+      takeName: Wind
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 104
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

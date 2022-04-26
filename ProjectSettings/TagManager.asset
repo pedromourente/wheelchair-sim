@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cars
+  - WinBox
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Cars
   - Water
   - UI
-  - 
+  - Winbox
   - 
   - 
   - 

@@ -8,18 +8,27 @@ public class WinLose : MonoBehaviour
     public float restartdelay = 2f;
 
     public GameObject LoseUI;
+    public GameObject WinUI;
 
     public void Winlevel()
     {
-        if (gameended == false)
-        {
-            LoseUI.SetActive(true);
-            gameended = true;
-            Debug.Log("You lost");
-            Invoke("Restart", restartdelay);
-        }
-        
+        WinUI.SetActive(true);
     }
+    public void loselevel()
+    {
+        LoseUI.SetActive(true);
+    }
+    //public void Winlevel()
+    //{
+    //    if (gameended == false)
+    //    {
+    //        LoseUI.SetActive(true);
+    //        gameended = true;
+    //        Debug.Log("You lost");
+    //        Invoke("Restart", restartdelay);
+    //    }
+        
+    //}
     public void Restart()
     {
 
