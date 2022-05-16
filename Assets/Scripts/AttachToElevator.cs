@@ -10,7 +10,7 @@ public class AttachToElevator : MonoBehaviour
     {
         if (gameObject == player)
         {
-            player.transform.parent = transform;
+            player.transform.SetParent(gameObject.transform, true);
         }    
     }
     private void OnTriggerExit(Collider other)

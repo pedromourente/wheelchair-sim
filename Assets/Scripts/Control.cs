@@ -27,10 +27,10 @@ public class Control : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKey("Escape"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex * 0);
-        }
+        //if (Input.GetKey("Escape"))
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex * 0);
+        //}
         
         if (gameObject.transform.localRotation.eulerAngles.z > 90f && gameObject.transform.localRotation.eulerAngles.z < 180f)
         {
@@ -39,7 +39,7 @@ public class Control : MonoBehaviour
         }
     }
 
-    public void ApplyLocalPositionToVisuals(WheelCollider collider)
+    public void ApplyLocalPositionToVisuals(WheelCollider collider, Transform Trans)
     {
         if (collider.transform.childCount == 0)
         {
@@ -74,10 +74,18 @@ public class Control : MonoBehaviour
                 axleInfo.leftWheel.motorTorque = motor;
                 axleInfo.rightWheel.motorTorque = motor;
             }
-            ApplyLocalPositionToVisuals(axleInfo.leftWheel);
-            ApplyLocalPositionToVisuals(axleInfo.rightWheel);
+            ApplyLocalPositionToVisuals(axleInfo.leftWheel, leftWheelTR);
+            ApplyLocalPositionToVisuals(axleInfo.rightWheel, rightWheelTR);
         }
     }
     
+    void UpdateWheel(WheelCollider col, Transform trans)
+    {
+        Vector3 position;
+        Quaternion rotation;
+        col.GetWorldPose(out position, out rotation);
 
+        trans.position = position;
+        trans.rotation = rotation;  
+    }
 }

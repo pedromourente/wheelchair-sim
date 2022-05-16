@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
+  AmountUI: {fileID: 0}
   StarValue: 0
-  winAmount: 1
+  winAmount: 2
   winlosescript: {fileID: 0}
+  Timer: {fileID: 0}
