@@ -4529,6 +4529,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7964297888952096224, guid: dace4ff5d63f55546a62e0e977762d08, type: 3}
   m_PrefabInstance: {fileID: 121131469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &121131471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7964297888638331250, guid: dace4ff5d63f55546a62e0e977762d08, type: 3}
+  m_PrefabInstance: {fileID: 121131469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &122471091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7657,6 +7662,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4942415221793979109, guid: 6d220af133d3c0d4999f4bbfd2299bb4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 121131471}
     - target: {fileID: 5212799628257150922, guid: 6d220af133d3c0d4999f4bbfd2299bb4, type: 3}
       propertyPath: m_Name
       value: Elevator
