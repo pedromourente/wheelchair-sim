@@ -740,7 +740,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.44499996, y: 0.2728001, z: -0.059999943}
+  m_ConnectedAnchor: {x: -0.44500002, y: 0.2728001, z: -0.059999704}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -849,7 +849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8671505738583084441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.05}
+  m_LocalPosition: {x: -0.056, y: 0.121, z: -0.023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8671505739870568819}
@@ -962,7 +962,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.31800002, y: -0.011199951, z: 0.4250002}
+  m_ConnectedAnchor: {x: 0.31799996, y: -0.011199951, z: 0.42499995}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1317,7 +1317,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.437, y: 0.2728001, z: -0.06699997}
+  m_ConnectedAnchor: {x: 0.43700004, y: 0.27279997, z: -0.06699998}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -1461,7 +1461,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8671505739208523474}
-  m_LocalRotation: {x: -0, y: 0.9996352, z: -0, w: 0.027007977}
+  m_LocalRotation: {x: 0, y: 0.99963534, z: 0, w: 0.027005788}
   m_LocalPosition: {x: 0.899, y: 1.26, z: -2.944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1486,7 +1486,7 @@ MonoBehaviour:
   m_Camera: {fileID: 0}
   m_OriginBaseGameObject: {fileID: 8671505739208523474}
   m_CameraFloorOffsetObject: {fileID: 8671505738583084441}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.36144
   m_CameraGameObject: {fileID: 8671505739870568822}
 --- !u!114 &8671505739208523468
@@ -1624,7 +1624,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.32200003, y: -0.011199951, z: 0.42499992}
+  m_ConnectedAnchor: {x: -0.32199997, y: -0.011199951, z: 0.42500016}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2619,7 +2619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2631,7 +2631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2643,11 +2643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_Name
-      value: RightHand
+      value: LeftHand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
@@ -2681,7 +2681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2693,7 +2693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2705,7 +2705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fdd2ba28ad4cbe047a8d3d1d16be5ded, type: 3}
       propertyPath: m_Name

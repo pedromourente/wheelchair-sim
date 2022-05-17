@@ -2,8 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+   
+  
+
+
 public class WheelchairController : MonoBehaviour
 {
+
+    public Transform topOfJoystick;
+    public Transform JoyStick; 
+
+    [SerializeField]
+    public float forwardBackwardtilt = 0;
+    [SerializeField]
+    public float sideToSideTilt = 0;
+
+
     [SerializeField] WheelCollider frontleft;
     [SerializeField] WheelCollider frontright;
     [SerializeField] WheelCollider backleft;
@@ -30,12 +45,35 @@ public class WheelchairController : MonoBehaviour
 
             winlosescript.loselevel();
         }
+
+        forwardBackwardtilt = topOfJoystick.rotation.eulerAngles.x;
+        if (forwardBackwardtilt < 355 && forwardBackwardtilt > 290)
+        {
+            forwardBackwardtilt = Mathf.Abs(forwardBackwardtilt - 360);
+            Debug.Log("this is the thing " + forwardBackwardtilt);
+            //move something using forwardbackwardtilt as speed
+        }
+        else if (forwardBackwardtilt > 5 && forwardBackwardtilt < 74)
+        {
+            //do smth
+        }
+
+        sideToSideTilt = topOfJoystick.rotation.eulerAngles.z;
+        if (sideToSideTilt < 355 && sideToSideTilt > 290)
+        {
+            sideToSideTilt = Mathf.Abs(sideToSideTilt - 360);
+        }
+        else if (sideToSideTilt > 5 && sideToSideTilt < 74)
+        {
+
+        }
     }
 
    private void FixedUpdate()
     {
 
-        CurrentAcceleration = Acceleration * Input.GetAxis("Vertical");
+        //CurrentAcceleration = Acceleration * Input.GetAxis("Vertical");
+
 
         if (Input.GetKey(KeyCode.Space))
             
@@ -68,4 +106,13 @@ public class WheelchairController : MonoBehaviour
         trans.position = position;
         trans.rotation = rotation;
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("RightHand") || other.CompareTag("LeftHand"))
+        {
+            JoyStick.transform.LookAt(other.transform.position, transform.up);
+        }
+    }
+
 }
