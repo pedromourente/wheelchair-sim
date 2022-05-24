@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
+
+
 [System.Serializable]
 public class AxleInfo
 {
@@ -14,6 +16,14 @@ public class AxleInfo
 
 public class Control : MonoBehaviour
 {
+    public Transform topOfJoystick;
+
+    [SerializeField]
+    private float forwardBackwardtilt = 0;
+    [SerializeField]
+    private float sideToSideTilt = 0;
+
+
     public List<AxleInfo> axleInfos;
     public float maxMotorTorque;
     public float maxSteeringAngle;
@@ -37,8 +47,49 @@ public class Control : MonoBehaviour
             
             winlosescript.loselevel();
         }
-    }
 
+
+
+
+
+
+        
+            forwardBackwardtilt = topOfJoystick.rotation.eulerAngles.x;
+        Debug.Log("this is forwardbackward " + forwardBackwardtilt);
+
+        if (forwardBackwardtilt < 355 && forwardBackwardtilt > 290)
+            {
+                forwardBackwardtilt = Mathf.Abs(forwardBackwardtilt - 360);
+                //move something using forwardbackwardtilt as speed
+            }
+            else if (forwardBackwardtilt > 5 && forwardBackwardtilt < 74)
+            {
+                //do smth
+            }
+
+            sideToSideTilt = topOfJoystick.rotation.eulerAngles.z;
+        Debug.Log("this is sidetoside " + forwardBackwardtilt);
+
+        if (sideToSideTilt < 355 && sideToSideTilt > 290)
+            {
+         
+                sideToSideTilt = Mathf.Abs(sideToSideTilt - 360);
+            }
+            else if (sideToSideTilt > 5 && sideToSideTilt < 74)
+            {
+
+            }
+        
+
+       
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("RightHand") || other.CompareTag("LeftHand"))
+        {
+            transform.LookAt(other.transform.position, transform.up);
+        }
+    }
     public void ApplyLocalPositionToVisuals(WheelCollider collider, Transform Trans)
     {
         if (collider.transform.childCount == 0)
@@ -59,7 +110,9 @@ public class Control : MonoBehaviour
     public void FixedUpdate()
     {
 
-        float motor = maxMotorTorque * Input.GetAxis("Vertical");
+        //float motor = maxMotorTorque * Input.GetAxis("Vertical");
+        //float motor = maxMotorTorque * (forwardBackwardtilt/200);
+        float motor = 0;
         float steering = maxSteeringAngle * Input.GetAxis("Horizontal");
 
         foreach (AxleInfo axleInfo in axleInfos)
